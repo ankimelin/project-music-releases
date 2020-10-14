@@ -3,7 +3,6 @@ import { Artist } from './Artist.js'
 
 
 export const Album = (props) => {
-  // console.log(props)
   return (
     <article className="album">
       <a href={props.link} target="_blank">
