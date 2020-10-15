@@ -17,18 +17,18 @@ code {
   margin: 20px;
   border: 2px solid black;
   height: auto;
-  width: 200px;
+  width: 400px;
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   border-bottom: 2px solid black;
 }
 
 h1, h2 {
   font-size: 20px;
-  margin: 10px;
+  margin-right: 6px; 
 }
 
 a {
@@ -49,3 +49,8 @@ h2:hover {
   position: absolute;
   width: 50px;
 }
+
+.artist {
+  display: inline-block;
+}
+
