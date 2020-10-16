@@ -1,56 +1,58 @@
 import React from 'react'
 
-export const Artist = props => {
-  if (props.index === 0 && props.artists.length === 1) {
+export const Artist = ({ name, link, index, artists }) => {
+  if (artists.length === 1 && index === 0) {
     return (
       <div className="artist">
-        <a href={props.link} target="_blank">
-          <h2>{props.name}</h2>
+        <a href={link} target="_blank">
+          <h2>{name}</h2>
         </a>
       </div>
     )
   }
-  if (props.index === 0 && props.artists.length === 2) {
+  if (artists.length === 2 && index === 0) {
     return (
       <div className="artist">
-        <a href={props.link} target="_blank">
-          <h2>{props.name} &</h2>
+        <a href={link} target="_blank">
+          <h2>{name}</h2>
+        </a>
+        <p>&</p>
+      </div>
+    )
+  }
+  if (artists.length === 2 && index === 1) {
+    return (
+      <div className="artist">
+        <a href={link} target="_blank">
+          <h2>{name}</h2>
         </a>
       </div>
     )
   }
-  if (props.index === 1 && props.artists.length === 2) {
+  if (artists.length === 3 && index === 0) {
     return (
       <div className="artist">
-        <a href={props.link} target="_blank">
-          <h2>{props.name}</h2>
+        <a href={link} target="_blank">
+          <h2>{name},</h2>
         </a>
       </div>
     )
   }
-  if (props.index === 0 && props.artists.length > 2) {
+  if (artists.length === 3 && index === 1) {
     return (
       <div className="artist">
-        <a href={props.link} target="_blank">
-          <h2>{props.name},</h2>
+        <a href={link} target="_blank">
+          <h2>{name}</h2>
         </a>
+        <p>&</p>
       </div>
     )
   }
-  if (props.index === 1 && props.artists.length > 2) {
+  if (artists.length === 3 && index === 2) {
     return (
       <div className="artist">
-        <a href={props.link} target="_blank">
-          <h2>{props.name} & </h2>
-        </a>
-      </div>
-    )
-  }
-  if (props.index === 2 && props.artists.length > 2) {
-    return (
-      <div className="artist">
-        <a href={props.link} target="_blank">
-          <h2>{props.name}</h2>
+        <a href={link} target="_blank">
+          <h2>{name}</h2>
         </a>
       </div>
     )

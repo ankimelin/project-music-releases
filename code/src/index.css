@@ -27,7 +27,7 @@ code {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .album {
-    width: 48%;
+    width: 48.8%;
   }
 }
 
@@ -37,18 +37,14 @@ code {
   }
 }
 
-.artist {
-  display: inline-block;
-}
-
-img {
-  width: 100%;
-}
-
-.parent {
+.cover-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.cover {
+  width: 100%;
 }
 
 .play {
@@ -58,17 +54,20 @@ img {
   transition: all .2s ease-in-out;
 }
 
-.parent:hover .cover {
-  opacity: 0.5;
+.cover-container:hover .cover {
+  opacity: 0.4;
 }
 
-.cover:hover + .play {
+.cover-container:hover .play {
   display: block;
 }
 
 .play:hover {
   transform: scale(1.1);
-  display: block;
+}
+
+.artist {
+  display: inline-block;
 }
 
 h1 {
@@ -85,9 +84,12 @@ h2 {
   color: #a0a0a0;
   margin: 0;
   margin-top: 10px;
+  display: inline-block;
+  padding-right: 5px;    
 }
 
 h2:hover {
+  text-decoration: underline;
   color: white;
 }
 
@@ -106,4 +108,18 @@ a:hover {
   text-decoration: underline;
   color: white;
 }
+
+p {
+  display: inline-block;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-right: 5px;
+  font-weight: 700;
+  margin: 0;
+} 
+
+
+
 
