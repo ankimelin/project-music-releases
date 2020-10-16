@@ -8,10 +8,10 @@ export const Album = ({ name, image, link, artists }) => {
       <a href={link} target="_blank" rel="noopener noreferrer" >
         <div class="cover-container">
           <img class="cover" src={image} alt={name} ></img>
-          <img class="play" src='https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_play_circle_filled_white_48px-512.png'></img>
+          <img class="play" src='https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_play_circle_filled_white_48px-512.png' alt="play icon"></img>
         </div>
       </a>
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         <h1>{name}</h1>
       </a>
       <div>
