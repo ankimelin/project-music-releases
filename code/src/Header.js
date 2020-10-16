@@ -1,9 +1,11 @@
 import React from 'react'
 
+import './header.css'
+
 export const Header = () => {
   return (
     <header>
-      <h3>New albums & singles</h3>
+      <h1>New albums & singles</h1>
     </header>
   )
 }

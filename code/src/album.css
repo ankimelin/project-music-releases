@@ -1,0 +1,49 @@
+.album {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .album {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .album {
+    width: calc(25% - 20px);
+  }
+}
+
+.cover-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cover {
+  width: 100%;
+}
+
+.play {
+  display: none;
+  position: absolute;
+  width: 80px;
+  transition: all .2s ease-in-out;
+}
+
+.cover-container:hover .cover {
+  opacity: 0.4;
+}
+
+.cover-container:hover .play {
+  display: block;
+}
+
+.play:hover {
+  transform: scale(1.1);
+}
+
+.album-name {
+  margin-top: 10px;
+}
