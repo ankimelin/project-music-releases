@@ -2,7 +2,7 @@ import React from 'react'
 
 import './artist.css'
 
-const after = (index, artists) => {
+const displaySeparator = (index, artists) => {
   if (index === artists.length - 1) {
     return null
   } if (index === artists.length - 2) {
@@ -18,7 +18,7 @@ export const Artist = ({ name, link, index, artists }) => {
       <a href={link} target="_blank" rel="noopener noreferrer" >
         {name}
       </a>
-      {after(index, artists)}
+      {displaySeparator(index, artists)}
     </div>
   )
 }
