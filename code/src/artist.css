@@ -1,11 +1,10 @@
 .artist {
-  display: inline-block;
+  display: inline;
 }
 
 .artist a {
   margin: 0;
   margin-top: 10px;
-  display: inline-block;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
@@ -18,7 +17,7 @@
 
 p {
   margin: 0;
-  display: inline-block;
+  display: inline;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
