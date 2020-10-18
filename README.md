@@ -1,12 +1,12 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A music release site listing new albums and singles using a Spotify data.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First React project! 
+
+Started with console.log to check what data we have, and to find the paths to the data I wanted. Created a couple of components, which in the end was completely restructured. Also created one css file for each component in the end.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://upbeat-neumann-88f8f1.netlify.app/
