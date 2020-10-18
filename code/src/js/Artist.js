@@ -12,7 +12,7 @@ const displaySeparator = (index, artists) => {
   }
 }
 
-export const ArtistName = ({ name, link, index, artists }) => {
+export const Artist = ({ name, link, index, artists }) => {
   return (
     <div className="artist">
       <a href={link} target="_blank" rel="noopener noreferrer">

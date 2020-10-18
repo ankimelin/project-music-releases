@@ -26,3 +26,7 @@
 .play:hover {
   transform: scale(1.1);
 }
+
+.album-name {
+  margin-top: 10px;
+}

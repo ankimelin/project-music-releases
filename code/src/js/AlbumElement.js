@@ -1,8 +1,7 @@
 import React from 'react'
 
-import { AlbumCover } from './AlbumCover.js'
-import { AlbumName } from './AlbumName.js'
-import { ArtistName } from './ArtistName.js'
+import { AlbumCover, AlbumName } from './Album.js'
+import { Artist } from './Artist.js'
 
 import '../css/albumElement.css'
 
@@ -20,7 +19,7 @@ export const AlbumElement = ({ name, image, link, artists }) => {
       />
       <div>
         {artists.map((artist, index, artists) => {
-          return <ArtistName
+          return <Artist
             key={artist.id}
             name={artist.name}
             link={artist.external_urls.spotify}
