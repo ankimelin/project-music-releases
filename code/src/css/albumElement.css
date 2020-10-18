@@ -1,0 +1,30 @@
+.album-card {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .album-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-card {
+    width: calc(25% - 15px);
+  }
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}

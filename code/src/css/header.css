@@ -1,5 +1,8 @@
-h1 {
+header {
   margin: 20px;
+}
+
+h1 {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   color: #ffffff;

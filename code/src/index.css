@@ -13,28 +13,6 @@ code {
     monospace;
 }
 
-.album-container {
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: white;
-}
-
-
 
 
 

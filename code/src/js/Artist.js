@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './artist.css'
+import '../css/artist.css'
 
 const displaySeparator = (index, artists) => {
   if (index === artists.length - 1) {
