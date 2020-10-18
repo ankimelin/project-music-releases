@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { Cover } from './Cover.js'
+import { AlbumCover } from './AlbumCover.js'
 import { AlbumName } from './AlbumName.js'
-import { Artist } from './Artist.js'
+import { ArtistName } from './ArtistName.js'
 
 import '../css/albumElement.css'
 
 export const AlbumElement = ({ name, image, link, artists }) => {
   return (
     <div className="album-card">
-      <Cover
+      <AlbumCover
         name={name}
         image={image}
         link={artists}
@@ -20,7 +20,7 @@ export const AlbumElement = ({ name, image, link, artists }) => {
       />
       <div>
         {artists.map((artist, index, artists) => {
-          return <Artist
+          return <ArtistName
             key={artist.id}
             name={artist.name}
             link={artist.external_urls.spotify}

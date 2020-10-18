@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../css/artist.css'
+import '../css/artistName.css'
 
 const displaySeparator = (index, artists) => {
   if (index === artists.length - 1) {
@@ -12,10 +12,10 @@ const displaySeparator = (index, artists) => {
   }
 }
 
-export const Artist = ({ name, link, index, artists }) => {
+export const ArtistName = ({ name, link, index, artists }) => {
   return (
     <div className="artist">
-      <a href={link} target="_blank" rel="noopener noreferrer" >
+      <a href={link} target="_blank" rel="noopener noreferrer">
         {name}
       </a>
       {displaySeparator(index, artists)}

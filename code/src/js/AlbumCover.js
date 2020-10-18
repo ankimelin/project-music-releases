@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../css/cover.css'
 
-export const Cover = ({ name, image, link }) => {
+export const AlbumCover = ({ name, image, link }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" >
       <div class="cover-container">
